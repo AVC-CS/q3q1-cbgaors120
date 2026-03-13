@@ -26,15 +26,16 @@ int main()
     cout << "Lastly enter C value.\n";
     cin >> c;
 
-    x = -b;
-    cout << x << endl;
-    y = (b * b) - (4 * a * c);
+    x = (b * -1);
+    cout << "x=" << x << endl;
+    y = sqrt((b * b) - (4 * a * c));
     cout << y << endl;
     z = 2 * a * c;
     cout << z << endl;
 
-    resultpos = ((x + sqrt(y)) / z);
-    resultneg = ((x - sqrt(y)) / z);
+    resultpos = ((x + y) / z);
+    resultneg = ((x - y) / z);
+
     
     
     // TODO
@@ -42,7 +43,14 @@ int main()
 
     cout << setprecision(2) << fixed;
     // TODO
-    cout << "When adding square root: " << resultpos << ". When subtracting square root: " << resultneg << endl;
+    if (resultpos > resultneg)
+    {
+        cout << "When adding square root: " << resultpos << ". When subtracting square root: " << resultneg << endl;
+    }
+    else {
+        
+        cout << "When subtracting square root: " << resultneg << ". When adding square root: " << resultpos << endl;
+        }
 
     return 0;
 }
