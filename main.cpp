@@ -14,12 +14,7 @@ int main()
     
     
     // TODO
-    
-    x = -b;
-    y = (b * b) - 4 * a * c;
-    z = 2 * a * c;
-    
-    
+     
     
     // TODO
     // TODO
@@ -30,6 +25,10 @@ int main()
     cin >> b;
     cout << "Lastly enter C value.\n";
     cin >> c;
+
+    x = -b;
+    y = (b * b) - 4 * a * c;
+    z = 2 * a * c;
 
     resultpos = ((x + sqrt(y)) / z);
     resultneg = ((x - sqrt(y)) / z);
