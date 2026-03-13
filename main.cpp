@@ -27,8 +27,11 @@ int main()
     cin >> c;
 
     x = -b;
-    y = (b * b) - 4 * a * c;
+    cout << x << endl;
+    y = (b * b) - (4 * a * c);
+    cout << y << endl;
     z = 2 * a * c;
+    cout << z << endl;
 
     resultpos = ((x + sqrt(y)) / z);
     resultneg = ((x - sqrt(y)) / z);
