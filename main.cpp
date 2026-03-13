@@ -27,11 +27,11 @@ int main()
     cin >> c;
 
     x = (b * -1);
-    cout << "our programmed math\n" "\n"<< "x= " << x << endl;
+    //cout << "our programmed math\n" "\n"<< "x= " << x << endl;
     y = sqrt((b * b) - (4 * a * c));
-    cout << y << endl;
+    //cout << y << endl;
     z = 2 * a;
-    cout << z << endl;
+    //cout << z << endl;
 
     resultpos = ((x + y) / z);
     resultneg = ((x - y) / z);
